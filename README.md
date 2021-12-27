@@ -2,12 +2,12 @@
 
 1. Basic UI
 
-Screenshot - 1
+Screenshot - 1 (All Movies)
 
 ![Alt text](screenshots/img1.png?raw=true "screenshot 1")
 
 
-Screenshot - 2
+Screenshot - 2 (Movie Details)
 
 ![Alt text](screenshots/img2.png?raw=true "screenshot 2")
 
