@@ -27,8 +27,12 @@ class _MoviesListingState extends State<ListMovies> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black87,
-        title: const Text('Animated Movies'),
+        backgroundColor: Colors.white,
+        title: const Text(
+          'Animated Movies',
+          style: TextStyle(color: Colors.black),
+        ),
+        elevation: 0,
       ),
       body: GridView.count(
         // Create a grid with 2 columns. If you change the scrollDirection to
