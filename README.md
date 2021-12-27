@@ -1,7 +1,7 @@
 # learn
 
+Screenshot - 1 (Listed Movies from Api)
 
-#ft-2/api-usage
 ![Alt text](screenshots/movies.png?raw=true "Movies List")
 
 
