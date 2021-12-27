@@ -25,8 +25,6 @@ class _MoviesListingState extends State<ListMovies> {
 
   @override
   Widget build(BuildContext context) {
-    // var tagObjsJson = jsonDecode(movies) as List;
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black87,
@@ -118,14 +116,6 @@ class MovieTile extends StatelessWidget {
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.ellipsis),
               ),
-              //Styling movie's description text
-              // Padding(
-              //   padding: const EdgeInsets.all(8.0),
-              //   child: Text(
-              //     movies[index].overview,
-              //   ),
-              // ),
-              // Divider(color: Colors.grey.shade500),
             ],
           ),
         ));
