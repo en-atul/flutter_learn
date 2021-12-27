@@ -1,6 +1,16 @@
 # learn
 
-A new Flutter project.
+1. Basic UI
+
+Screenshot - 1
+
+![Alt text](screenshots/img1.png?raw=true "screenshot 1")
+
+
+Screenshot - 2
+
+![Alt text](screenshots/img2.png?raw=true "screenshot 2")
+
 
 ## Getting Started
 
