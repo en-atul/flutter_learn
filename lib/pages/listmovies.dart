@@ -26,27 +26,22 @@ class _MoviesListingState extends State<ListMovies> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text(
-          'Animated Movies',
-          style: TextStyle(color: Colors.black),
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          title: const Text(
+            'Animated Movies',
+            style: TextStyle(color: Colors.black),
+          ),
+          elevation: 0,
         ),
-        elevation: 0,
-      ),
-      body: GridView.count(
-        // Create a grid with 2 columns. If you change the scrollDirection to
-        // horizontal, this produces 2 rows.
-        crossAxisCount: 2,
-        childAspectRatio: (1 / 1.8),
-        // Generate 100 widgets that display their index in the List.
-        children: List.generate(movieslist.length, (index) {
-          return Container(
-              padding: const EdgeInsets.only(top: 20.0),
-              child: MovieTile(movieslist, index));
-        }),
-      ),
-    );
+        body: GridView.builder(
+            itemCount: movieslist.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisExtent: 400,),
+            itemBuilder: (context, index) {
+              return MovieTile(movieslist, index);
+            }));
   }
 }
 
@@ -78,11 +73,7 @@ class MovieTile extends StatelessWidget {
                   ? Container(
                       //Making image's width to half of the given screen size
                       width: MediaQuery.of(context).size.width / 2,
-
-                      //Making image's height to one fourth of the given screen size
                       height: 300,
-
-                      //Making image box visually appealing by dropping shadow
                       decoration: BoxDecoration(
                         //Making image box slightly curved
                         borderRadius: BorderRadius.circular(10.0),
@@ -118,6 +109,7 @@ class MovieTile extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                         color: Colors.black),
                     textAlign: TextAlign.center,
+                    maxLines: 2,
                     overflow: TextOverflow.ellipsis),
               ),
             ],
