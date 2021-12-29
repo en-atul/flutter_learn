@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:learn/components/gradient_outline.dart';
-import 'package:learn/models/message.dart';
+import 'package:learn/models/post.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
