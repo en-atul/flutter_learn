@@ -1,6 +1,13 @@
 # learn
 
-A new Flutter project.
+1. Basic UI
+
+Screenshot - 1 (Instagram Home UI)
+
+![Alt text](screenshots/img1.png?raw=true "screenshot 1")
+
+
+
 
 ## Getting Started
 
